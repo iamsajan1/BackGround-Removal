@@ -1,7 +1,10 @@
 import React from "react";
 import { Upload as UploadIcon, Image } from "lucide-react";
+import { AppContext } from "../context/AppContext";
+import { useContext } from "react";
 
 const Upload = () => {
+  const {removeBg}= useContext(AppContext);
   return (
     <section className="relative py-28 bg-gradient-to-br from-white via-slate-50 to-white overflow-hidden">
       {/* Soft background glow */}
@@ -44,7 +47,7 @@ const Upload = () => {
             PNG, JPG or WEBP (max 10MB)
           </p>
 
-          <input type="file" className="hidden" />
+          <input  onChange={e=>removeBg(e.target.files[0])} accept='image/*' type="file" className="hidden" />
         </label>
 
         {/* Supported platforms */}

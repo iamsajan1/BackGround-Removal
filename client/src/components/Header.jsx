@@ -6,8 +6,11 @@ import {
   Linkedin,
   Sparkles
 } from 'lucide-react'
+import { AppContext } from '../context/AppContext'
+import { useContext } from 'react'
 
 const Header = () => {
+  const {removeBg}= useContext(AppContext);
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-white/80 via-white/70 to-white/80 text-black">
 
@@ -40,7 +43,7 @@ const Header = () => {
           <label className="inline-flex items-center gap-3 px-9 py-4 rounded-2xl bg-gradient-to-r from-indigo-500 to-cyan-400 text-black font-semibold shadow-[0_20px_60px_rgba(99,102,241,0.45)] hover:scale-105 transition cursor-pointer">
             <Upload size={20} />
             Upload Image
-            <input type="file" hidden />
+            <input onChange={e=>removeBg(e.target.files[0])} accept='image/*' type="file" hidden />
           </label>
         </div>
 

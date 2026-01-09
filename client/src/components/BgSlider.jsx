@@ -30,7 +30,7 @@ const BgSlider = () => {
   alt=""
 />
 
-<img className="absolute top-0 left-0 w-full h-full" src={assets.image_wo_bg} style={{ clipPath: `inset(0 0 0 ${sliderPosition}% )` }} alt="" />
+<img className="absolute top-0 left-0 w-full h-full" src={assets.image_without_bg} style={{ clipPath: `inset(0 0 0 ${sliderPosition}% )` }} alt="" />
 {/* slider */}
 <input className="absolute top-1/2 left-1/2 transform -translate-x-1/2 translate-y-1/2
 w-full z-10 slider" type="range" min={0} max={100} value={sliderPosition} onChange={handleSliderChange} />

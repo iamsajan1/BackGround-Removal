@@ -6,7 +6,7 @@ import remove_bg_icon from './remove_bg_icon.svg'
 import upload_btn_icon from './upload_btn_icon.svg'
 import upload_icon from './upload_icon.svg'
 import download_icon from './download_icon.svg'
-import image_w_bg from './image_w_bg.png'
+import image_w_bg from './image_w_bg.jpg'
 import image_wo_bg from './image_wo_bg.png'
 import facebook_icon from './facebook_icon.svg'
 import google_plus_icon from './google_plus_icon.svg'
@@ -16,6 +16,7 @@ import profile_img_2 from './profile_img_2.png'
 import credit_icon from './credit_icon.png'
 import image_wi_bg from './image_w_bg.jpg'
 import w_bg from './w_bg.png'
+import image_without_bg from './image_without_bg.png'
 
 export const assets = {
     logo,
@@ -33,7 +34,8 @@ export const assets = {
     upload_btn_icon,
     credit_icon,
     image_wi_bg,
-    w_bg
+    w_bg,
+    image_without_bg
 }
 
 export const testimonialsData = [
